@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.com/Ms-Alex/twatter-server.svg?branch=master)](https://travis-ci.com/Ms-Alex/twatter-server)
-
 # Twatter
 > A social application where you can add your status, throughout the day! As well as, checking out others' status' too!!
 
@@ -7,7 +5,7 @@ Created with Node with Express backend, auth implementation using jasonWebToken,
 
 Deployed on Heroku: https://twatter-client-ah.herokuapp.com/
 
-Express frontend repo available here: https://github.com/Ms-Alex/twatter-client
+Express backend repo available here: https://github.com/Ms-Alex/twatter-server
 
 <p align="center">
 <img src="https://media.giphy.com/media/9zZKRCMpAuFLphtPgE/giphy.gif" alt="twatter still video">
@@ -25,7 +23,7 @@ npm install
 
 front end:
 ```sh
-npm install
+cd app/ && npm install
 ```
 
 ** Must have node installed.
@@ -67,14 +65,20 @@ You can view someone's page, and edit your profile image:
 
 ## Development setup
 
-backend: 
+Note: Make sure you have mongo installed. To install via brew: https://treehouse.github.io/installation-guides/mac/mongo-mac.html
+
+backend:
+
+On separate terminals run: `mongod` and `mongo`.
+
+Then, inside this repo (twatter-app/), run:
 ```sh
 npm start
 ```
 
 frontend:
 ```sh
-npm start
+cd app/ && npm start
 ```
 
 ## Release History
@@ -90,7 +94,7 @@ Alexandra Hernandez – ms.hernandeza1@gmail.com
 
 ## Contributing
 
-1. Fork it (<https://github.com/Ms-Alex/twatter-server/fork>)
+1. Fork it (<https://github.com/Ms-Alex/twatter-client/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)

@@ -23,7 +23,7 @@ npm install
 
 front end:
 ```sh
-npm install
+cd app/ && npm install
 ```
 
 ** Must have node installed.
@@ -65,14 +65,20 @@ You can view someone's page, and edit your profile image:
 
 ## Development setup
 
-backend: 
+Note: Make sure you have mongo installed. To install via brew: https://treehouse.github.io/installation-guides/mac/mongo-mac.html
+
+backend:
+
+On separate terminals run: `mongod` and `mongo`.
+
+Then, inside this repo (twatter-app/), run:
 ```sh
 npm start
 ```
 
 frontend:
 ```sh
-npm start
+cd app/ && npm start
 ```
 
 ## Release History
