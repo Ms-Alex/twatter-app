@@ -16,12 +16,12 @@ Express backend repo available here: https://github.com/Ms-Alex/twatter-server
 
 OS X & Linux:
 
-back end:
+#### backend:
 ```sh
 npm install
 ```
 
-front end:
+#### frontend:
 ```sh
 cd app/ && npm install
 ```
@@ -67,16 +67,18 @@ You can view someone's page, and edit your profile image:
 
 Note: Make sure you have mongo installed. To install via brew: https://treehouse.github.io/installation-guides/mac/mongo-mac.html
 
-backend:
+#### backend:
 
 On separate terminals run: `mongod` and `mongo`.
+
+To seed a user into the app, run: `node seed.js`. Login information will be email: user1@email.com, and password: user123. 
 
 Then, inside this repo (twatter-app/), run:
 ```sh
 npm start
 ```
 
-frontend:
+#### frontend:
 ```sh
 cd app/ && npm start
 ```
